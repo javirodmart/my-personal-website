@@ -1,4 +1,11 @@
-const h2 = document.createElement("h2");
-h2.textContent = "This content added by JavaScript";
+const box = document.getElementsByTagName('a');
 
-document.querySelector("body").appendChild(h2);
+// 👇️ Change text color on mouseover
+box.addEventListener('mouseover', function handleMouseOver() {
+  box.style.color = 'yellow';
+});
+
+// 👇️ Change text color back on mouseout
+box.addEventListener('mouseout', function handleMouseOut() {
+  box.style.color = 'red';
+});
