@@ -2,7 +2,9 @@
 body {
     background: #aa4b6b;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #3b8d99, #6b6b83, #aa4b6b);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #3b8d99, #6b6b83, #aa4b6b); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-image: linear-gradient(to right, #3b8d99, #6b6b83, #aa4b6b); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: 500%;
+    animation:bg-animation 10s infinite;
     font-family:Rubik Dirt, cursive;
 }
  #header{
@@ -28,5 +30,16 @@ body {
    color: white;
  }
 
+ @keyframes bg-animation{
+   0%{
+      background-position: left;
+   }
+   50% {
+      background-position: right;
+   }
+   100%{
+      background-position: left;
+   }
+ }
  
 
