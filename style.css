@@ -4,31 +4,77 @@ body {
     background: -webkit-linear-gradient(to right, #3b8d99, #6b6b83, #aa4b6b);  /* Chrome 10-25, Safari 5.1-6 */
     background-image: linear-gradient(to right, #3b8d99, #6b6b83, #aa4b6b); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     background-size: 500%;
-    animation:bg-animation 10s infinite;
+    /*animation:bg-animation 20s infinite;*/
     font-family:Rubik Dirt, cursive;
 }
  #header{
     color:white;
     text-align: center;
-    font-size: 100px;
+    font-size: 70px;
     
  }
 
-  a{
-    text-align: center;
-    font-size: 50px;
-    text-decoration: none;
-    padding-left: 50px;
-    color: black;
- }
+  
 
  div + #link{
   text-align:center;
  }
 
- #link, a:hover{
-   color: white;
+ #hideAbout{
+   
+   display: none;
+
  }
+
+ #link, a {
+   text-align: center;
+    font-size: 50px;
+    text-decoration: none;
+    color: black; 
+    
+ }
+
+ #aboutMe{
+   padding-bottom: 30px;
+   text-align: center;
+   margin: auto;
+ 
+   
+ }
+
+ #contact{
+   padding-top: 30px;
+   
+ }
+
+ img, #logoimg {
+  
+   width:100px;
+   height: auto;
+   display: inline-block;
+   vertical-align: middle;
+ }
+
+  #mePhoto{
+   width: 200px;
+   height: auto;
+ }
+
+ #span, #logoimg{
+   padding: 50px;
+ }
+ #hideContact{
+   display: none;
+ }
+
+#projects{
+   padding-top: 60px;
+}
+
+#hideProjects{
+   display: none;
+   padding: 40px;
+}
 
  @keyframes bg-animation{
    0%{
@@ -40,6 +86,13 @@ body {
    100%{
       background-position: left;
    }
+ }
+
+ #logos{
+   font-family: 'Courier New', Courier, monospace;
+   font-size: small;
+   text-align: center;
+   margin: auto;
  }
  
 

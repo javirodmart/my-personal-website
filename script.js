@@ -1,11 +1,32 @@
-const box = document.getElementsByTagName('a');
+const hideAbout = document.getElementById("hideAbout");
+const aboutMe = document.getElementById("aboutMe")
 
-// 👇️ Change text color on mouseover
-box.addEventListener('mouseover', function handleMouseOver() {
-  box.style.color = 'yellow';
-});
+aboutMe.addEventListener("mouseover", function handelMouseOver(){
+    hideAbout.style.display= "block";
+})
 
-// 👇️ Change text color back on mouseout
-box.addEventListener('mouseout', function handleMouseOut() {
-  box.style.color = 'red';
-});
+aboutMe.addEventListener("mouseout", function handelMouseout(){
+    hideAbout.style.display = "none"
+})
+
+const contact = document.getElementById("contact");
+const hidecontact = document.getElementById("hideContact");
+
+contact.addEventListener("mouseover", function handelMouseOver1(){
+    hidecontact.style.display = "block";
+})
+
+contact.addEventListener("mouseout", function handelMouseOver1(){
+    hidecontact.style.display = "none";
+})
+
+const projects = document.getElementById("projects");
+const hideProjects = document.getElementById("hideProjects");
+
+projects.addEventListener("mouseover", function handelMouseOver1(){
+    hideProjects.style.display = "block";
+})
+
+projects.addEventListener("mouseout", function handelMouseOver1(){
+    hideProjects.style.display = "none";
+})
