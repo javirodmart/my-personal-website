@@ -1,92 +1,111 @@
-@import url('https://fonts.googleapis.com/css2?family=Rubik+Dirt&display=swap');
-body {
-    background: #aa4b6b;
-    background: -webkit-linear-gradient(to right, #3b8d99, #6b6b83, #aa4b6b);  
-    background-image: linear-gradient(to right, #3b8d99, #6b6b83, #aa4b6b); 
-    background-size: 500%;
-    animation:bg-animation 20s infinite;
-    font-family:Rubik Dirt, cursive;
+@font-face {
+  font-family:japanese;
+  src: url(./fonts/AssassinNinja-7BYyR.ttf);
 }
+
+body {
+    font-family: japanese;
+    background: url("./img/background.jpg")  no-repeat center center fixed;
+    background-size: cover;
+}
+
+/*Header*/
+
  #header{
-    color:white;
+    color:black;
     text-align: center;
-    font-size: 70px;
-    
+    font-size: 50px;
+    width:auto;
+    margin: auto;
+   border-color: none;
  }
 
-  
-
- div + #link{
-  text-align:center;
+/* about me tab */
+ 
+#aboutMe{
+   padding-bottom: 50px;
+   text-align: center;
+   width: 600px;
+   margin: auto;
+   font-size: 50px;
+ }
+ 
+ #mePhoto{
+   width: 200px;
+   height: auto;
+   margin: auto;
+   text-align: center;
+   padding-top: 60px;
  }
 
  #hideAbout{
-   
+   width: 600px;
    display: none;
-
+   font-family: 'Courier New', Courier, monospace;
+   text-align: center;
+   margin: 0% auto;
+   color:black;
  }
 
- #link, a {
+ p{
+  background: rgba(148, 146, 144, 0.9);
+  font-size:xx-large;
+  width: fit-content;
+  margin: auto;
+ }
+
+  a {
    text-align: center;
     font-size: 50px;
     text-decoration: none;
     color: black; 
-    
  }
 
- #aboutMe{
-   padding-bottom: 30px;
-   text-align: center;
-   margin: auto;
+ /*contact and social */
  
-   
- }
-
  #contact{
-   padding-top: 30px;
-   
+   padding-top: 50px;
+   padding-bottom: 50px;
+   width: fit-content;
+   margin: auto;
+   font-size: 50px;
+  text-align: center;
  }
 
  img, #logoimg {
-  
    width:100px;
    height: auto;
    display: inline-block;
    vertical-align: middle;
- }
-
-  #mePhoto{
-   width: 200px;
-   height: auto;
- }
-
- #span, #logoimg{
    padding: 50px;
  }
+
  #hideContact{
    display: none;
+   background: rgba(148, 146, 144, 0.9);
+   width: 1200px;
+   text-align: center;
+   margin: auto;
  }
+
+ /*Projects*/
 
 #projects{
    padding-top: 60px;
+   width: fit-content;
+   margin: auto;
+   font-size: 50px;
+   text-align: center;
 }
 
 #hideProjects{
    display: none;
-   padding: 40px;
+   width: fit-content;
+   background: rgba(148, 146, 144, 0.9);
 }
 
- @keyframes bg-animation{
-   0%{
-      background-position: left;
-   }
-   50% {
-      background-position: right;
-   }
-   100%{
-      background-position: left;
-   }
- }
+ 
+ /*credits*/
 
  #logos{
    font-family: 'Courier New', Courier, monospace;
