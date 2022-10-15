@@ -5,8 +5,10 @@
 
 body {
     font-family: japanese;
-    background: url("./img/background.jpg")  no-repeat center center fixed;
-    background-size: cover;
+    background: url("./img/background.jpg")  no-repeat  center ;
+  
+    width:auto;
+    height:auto;
 }
 
 /*Header*/
@@ -83,7 +85,7 @@ body {
  #hideContact{
    display: none;
    background: rgba(148, 146, 144, 0.9);
-   width: 1200px;
+   width: fit-content;
    text-align: center;
    margin: auto;
  }
